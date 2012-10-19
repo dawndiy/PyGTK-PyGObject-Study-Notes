@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*
-# Toolbar
+# MessageDialog
 # PyGtk Stady Notes By DawnDIY
 # http://www.dawndiy.com 
 
