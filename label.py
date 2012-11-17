@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Label Example
-# PyGObject Stady Notes By DawnDIY
+# PyGObject Study Notes By DawnDIY
 # http://dawndiy.com
 
 from gi.repository import Gtk
