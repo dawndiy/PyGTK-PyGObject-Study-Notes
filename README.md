@@ -15,4 +15,3 @@ PyGTK/PyGObject 学习笔记
 详情：	http://www.dawndiy.com/archives/tag/pygtk
 
 这里的所有代码都是我用于学习 PyGTK/PyGObject 所写的，同时我也写了一些我学习的笔记。如果你想要学习 PyGTK 或 PyGObject ，很高兴向你推荐我网站上的学习笔记，链接在上面。同时很高兴能在这交朋友，互相学习~ :)
-`
