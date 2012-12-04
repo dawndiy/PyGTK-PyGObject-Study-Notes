@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Fixed layout container
-# PyGtk Stady Notes By DawnDIY
+# PyGtk Study Notes By DawnDIY
 # http://dawndiy.com
 
 import pygtk

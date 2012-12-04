@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*
 
 # Table layout container
-# PyGtk Stady Notes By DawnDIY
+# PyGtk Study Notes By DawnDIY
 # http://www.dawndiy.com
 
 import pygtk

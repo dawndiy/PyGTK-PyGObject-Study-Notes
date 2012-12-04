@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*
 # MessageDialog
-# PyGtk Stady Notes By DawnDIY
+# PyGtk Study Notes By DawnDIY
 # http://www.dawndiy.com 
 
 from gi.repository import Gtk

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # HBox layout container
-# PyGtk Stady Notes By DawnDIY
+# PyGtk Study Notes By DawnDIY
 # http://www.dawndiy.com
 
 import pygtk
