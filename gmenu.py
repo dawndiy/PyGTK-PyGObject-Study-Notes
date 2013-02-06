@@ -38,8 +38,8 @@ class MyApplication(Gtk.Application):
         menu = Gio.Menu()
         # 新建三个菜单选项
         item_new = Gio.MenuItem.new("New", "app.new")
-        item_about = Gio.MenuItem.new("About", "app.new")
-        item_quit = Gio.MenuItem.new("Quit", "app.new")
+        item_about = Gio.MenuItem.new("About", "app.about")
+        item_quit = Gio.MenuItem.new("Quit", "app.quit")
         
         # 建立菜单，作为子菜单
         submenu = Gio.Menu()
