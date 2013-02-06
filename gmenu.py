@@ -25,15 +25,43 @@ class MyApplication(Gtk.Application):
         # 启动应用
         Gtk.Application.do_startup(self)
 
-        # 建立菜单
-        menu = Gio.Menu()
-        # 向菜单添加3个选项
-        menu.append("New", "app.new")
-        menu.append("About", "app.about")
-        menu.append("Quit", "app.quit")
-        # 将该菜单添加成应用的菜单 
-        self.set_app_menu(menu)
+#        # 建立菜单
+#        menu = Gio.Menu()
+#        # 向菜单添加3个选项
+#        menu.append("New", "app.new")
+#        menu.append("About", "app.about")
+#        menu.append("Quit", "app.quit")
+#        # 将该菜单添加成应用的菜单 
+#        self.set_app_menu(menu)
 
+        # 建立顶层菜单
+        menu = Gio.Menu()
+        # 新建三个菜单选项
+        item_new = Gio.MenuItem.new("New", "app.new")
+        item_about = Gio.MenuItem.new("About", "app.new")
+        item_quit = Gio.MenuItem.new("Quit", "app.new")
+        
+        # 建立菜单，作为子菜单
+        submenu = Gio.Menu()
+        # 直接添加2个选项
+        submenu.append("sub_New", "app.new")
+        submenu.append("sub_About", "app.about")
+        
+        # 建立菜单，作为父菜单
+        menu2 = Gio.Menu()
+        # 将子菜单添加进来
+        menu2.append_submenu("Sub", submenu)
+        menu2.append("exit", "app.quit")
+        
+        # 把选项、父菜单都加入到顶层菜单中
+        menu.append_item(item_new)
+        menu.append_item(item_about)
+        menu.append_section("", menu2)  # 父菜单添加为不同菜单区域
+        menu.append_item(item_quit)
+        
+        # 将顶层菜单作为应用程序的菜单
+        self.set_app_menu(menu)
+        
         # 为菜单 new 选项添加动作
         new_action = Gio.SimpleAction.new("new", None)
         # 连接到回调函数 new_cb
